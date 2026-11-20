@@ -132,12 +132,9 @@ main {
     border: 5px solid white;
     border-radius: 10px;
 
-    transform: scale(1);
-    transition: transform 0s ease;
 }
 
 .Home_Explore_BTN:hover {
-    transition: transform 0.1s ease;
     font-size: clamp(30px, 6vw, 50px);
     text-decoration: underline;
     padding: 10px;
@@ -172,13 +169,17 @@ main {
 }
 
 .Content_Photo {
-    display: flex;
+    display: block;
+     object-fit: cover;
+     
     width: 80%;
     justify-self: center;
     margin-top: 20px;
     margin-bottom: 50px;
 
     border: 2px solid black;
+
+
 }
 
 .Content_Photo_container {
