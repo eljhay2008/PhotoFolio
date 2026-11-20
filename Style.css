@@ -1,0 +1,247 @@
+iframe {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 80px;
+}
+
+body {
+    margin: 0;
+    background-image: url("sky_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("sky_bg.jpg") center / cover no-repeat;
+    z-index: -1;
+    pointer-events: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-image: url(sky_bg.jpg);
+    background-size: 220%;
+    background-position: top;
+}
+
+.Main_header {
+    font-family: sans-serif;
+    font-size: clamp(35px, 4vw, 100px);
+    color: white;
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    margin: 0;
+    padding-left: 12px;
+
+    flex-direction: row;
+}
+
+@media (min-width: 1023px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Main_header {
+        align-self: center;
+        font-size: clamp(50px, 4vw, 100px);
+        width: clamp(1000px, 80vw, 1500px);
+    }
+
+    iframe {
+        align-self: center;
+        margin-top: 30px;
+        width: clamp(768px, 80vw, 1800px);
+    }
+}
+
+/*Main*/
+main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/*Home page---------------------------------------------------------*/
+
+.Home_Welcome_Message {
+    font-family: 'Courier New', Courier, monospace;
+    width: clamp(0px , 50%, 1024px);
+    font-size: clamp(50px, 5vw, 200px);
+    color: white;
+
+    margin-left: 20px;
+}
+
+.Home_Moto {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.Home_Short_Introduction {
+    font-family: 'Times New Roman', Times, serif;
+    width: 90vw;
+    color: white;
+    font-size: 22px;
+
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.Home_Explore_BTN {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(30px, 5vw, 40px);
+    color: white;
+    text-align: center;
+    flex-flow: nowrap;
+
+    margin-left: clamp(0px, 5vw, 40px);
+    margin-right: clamp(0px, 5vw, 40px);
+    
+    padding: 5px;
+    border: 5px solid white;
+    border-radius: 10px;
+
+    transform: scale(1);
+    transition: transform 0s ease;
+}
+
+.Home_Explore_BTN:hover {
+    transition: transform 0.1s ease;
+    font-size: clamp(30px, 6vw, 50px);
+    text-decoration: underline;
+    padding: 10px;
+}
+
+
+
+
+
+/*Content---------------------------------------------------------*/
+
+
+.Content_Short_Introduction {
+    font-family: 'Courier New', Courier, monospace;
+    width: 90vw;
+    color: white;
+    font-size: 18px;
+
+    margin-left: 30px;
+    width: 80vw;
+    margin-bottom: 50px;
+
+
+}
+
+.Content_Photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.Content_Photo {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    border: 2px solid black;
+}
+
+.Content_Photo_container {
+    background-color: rgb(212, 201, 180);
+    width: 400px;
+    height: 450px;
+
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.Content_Photo_description {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    justify-self: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    color: black;
+    font-weight: bold;
+}
+
+/*About---------------------------------------------------------*/
+.About_page {
+    margin-left: 20px;
+    width: 90%;
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        
+    }
+}
+
+.About_SubContent {
+    margin-left: 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    
+}
+
+.About_Role {
+    font-family: 'Times New Roman', Times, serif;
+    width: 60vw;
+    color: white;
+    margin-left: 50px;
+}
+
+
+@media (min-width: 768px) {
+
+    /*Home page*/
+    .Home_Short_Introduction {
+        width: clamp(0px, 70vw, 2048px);
+    }
+
+    /*Content page*/
+
+}
