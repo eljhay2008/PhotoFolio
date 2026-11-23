@@ -41,3 +41,12 @@ nav a:hover {
     text-decoration: underline;
     padding: 0px;
 }
+
+nav a:active {
+    transition: transform 0.1s ease;
+    font-family: fantasy;
+    font-weight: 200;
+    transform: scale(1.2);
+    text-decoration: underline;
+    padding: 0px;
+}
