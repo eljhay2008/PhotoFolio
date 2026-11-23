@@ -5,26 +5,16 @@ iframe {
     width: 100vw;
     height: 80px;
 }
-
 body {
     margin: 0;
     background-image: url("sky_bg.jpg");
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    background-repeat: repeat;
-    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     overflow-x: hidden;
-
-    width: 100vw;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: url("sky_bg.jpg") center / cover no-repeat;
-    z-index: -1;
-    pointer-events: none;
+    width: 100%;
 }
 
 header {
