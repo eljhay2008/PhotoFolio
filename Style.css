@@ -244,9 +244,14 @@ li {
     .Home_Short_Introduction {
         width: clamp(0px, 70vw, 2048px);
     }
-
+  
     /*Content page*/ 
     
     /*About page*/
 
+}
+@media (max-width: 768px) {
+      .Home_Welcome_Message {
+        width: 85vw;
+    }
 }
